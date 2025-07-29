@@ -23,6 +23,7 @@ body {
   font-family: var(--font-body);
   background-color: var(--background-color);
   color: var(--text-color);
+  padding-top: 80px; /* Adjust based on header height */
 }
 
 .header {
@@ -311,6 +312,108 @@ a, button, .interactive {
   font-weight: bold;
 }
 
+/* Products Page Styles */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Music Page Styles */
+.music-player {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.music-player,
+.music-player h3,
+.music-player p {
+  color: #333; /* Dark color for contrast */
+}
+
+.player-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.player-controls button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Gallery Page Styles */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Contact Page Styles */
+.contact-form {
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
 @media (max-width: 768px) {
   .navigation, .buy-button {
     display: none;
@@ -318,5 +421,9 @@ a, button, .interactive {
 
   .hamburger {
     display: block;
+  }
+
+  body {
+    padding-top: 60px; /* Smaller header on mobile */
   }
 }

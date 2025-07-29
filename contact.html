@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Abir Clothes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <span class="icon">A</span>
+      <span class="text">Abir Clothes</span>
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="buy-button">Buy Now</button>
+    <div class="hamburger">☰</div>
+  </header>
+  <section class="fade-in">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p>Email: contact@abirclothes.com</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Address: 123 Fashion Street, Style City</p>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
