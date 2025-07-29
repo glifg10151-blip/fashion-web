@@ -1,0 +1,135 @@
+{
+    "website": {
+        "title": "Bukwild Band Official Website",
+        "description": "A modern, minimalist website design for the Bukwild Band, featuring a header with navigation and a hero section with a blob-shaped background image overlay and promotional text. This JSON can be used to generate HTML/CSS/JS code to replicate the design.",
+        "globalStyles": {
+            "fontFamily": "Sans-serif (e.g., Arial or Helvetica for body, bold for headings)",
+            "primaryColor": "#f5f0e9", 
+            "secondaryColor": "#3a2f2f", 
+            "accentColor": "#ff69b4", 
+            "backgroundColor": "#4a3c3c",
+            "textColor": "#ffffff", 
+            "fontSizes": {
+                "small": "14px",
+                "medium": "24px",
+                "large": "48px"
+            },
+            "spacing": {
+                "padding": "20px",
+                "margin": "10px"
+            }
+        },
+        "layout": "Responsive (desktop-first, adapt for mobile)",
+        "components": [
+            {
+                "type": "header",
+                "position": "Fixed or sticky at top",
+                "background": "#f5f0e9",
+                "height": "60px",
+                "elements": [
+                    {
+                        "type": "logo",
+                        "position": "Left",
+                        "content": {
+                            "icon": "Small square icon (e.g., a black square with 'B' or band symbol)",
+                            "text": "Bukwild Band",
+                            "fontSize": "20px",
+                            "color": "#3a2f2f",
+                            "style": "Bold, with icon to the left"
+                        }
+                    },
+                    {
+                        "type": "navigation",
+                        "position": "Center",
+                        "items": [
+                            {
+                                "label": "Home",
+                                "link": "#home",
+                                "style": "Inline, no underline, hover: underline"
+                            },
+                            {
+                                "label": "The Band",
+                                "link": "#band",
+                                "style": "Inline, no underline, hover: underline"
+                            },
+                            {
+                                "label": "Music",
+                                "link": "#music",
+                                "style": "Inline, no underline, hover: underline"
+                            },
+                            {
+                                "label": "Gallery",
+                                "link": "#gallery",
+                                "style": "Inline, no underline, hover: underline"
+                            },
+                            {
+                                "label": "Contact",
+                                "link": "#contact",
+                                "style": "Inline, no underline, hover: underline"
+                            }
+                        ],
+                        "fontSize": "16px",
+                        "color": "#3a2f2f",
+                        "spacing": "20px between items"
+                    },
+                    {
+                        "type": "button",
+                        "position": "Right",
+                        "content": "Buy Now",
+                        "style": "Rounded rectangle, background: #3a2f2f, color: #ffffff, padding: 10px 20px, hover: lighter shade"
+                    }
+                ]
+            },
+            {
+                "type": "hero",
+                "height": "600px",
+                "background": {
+                    "type": "Image",
+                    "url": "URL or description: Blurred concert image of band performing with violins and lights (muted purple-brown tones)",
+                    "style": "Full-width, cover, with overlay blob shape"
+                },
+                "overlay": {
+                    "shape": "Irregular oval/blob (organic shape, like a rounded cloud, centered, width: 80%, height: 400px)",
+                    "border": "Thin (1px) solid #ff69b4 (pink)",
+                    "content": {
+                        "type": "Text block",
+                        "position": "Centered inside blob",
+                        "elements": [
+                            {
+                                "type": "Subtitle",
+                                "text": "Promotion Video",
+                                "fontSize": "18px",
+                                "color": "#ff69b4", 
+                                "style": "Light, uppercase"
+                            },
+                            {
+                                "type": "Title",
+                                "text": "Drunken Monkeys Official Video",
+                                "fontSize": "48px",
+                                "color": "#ffffff", 
+                                "style": "Bold, multi-line, centered"
+                            }
+                        ],
+                        "innerBorder": "Thin pink rectangle around the text (width: 300px, height: 150px, centered)"
+                    }
+                },
+                "additionalElements": [
+                    {
+                        "type": "Stat",
+                        "position": "Bottom-right outside blob",
+                        "text": "400+ vehicles",
+                        "fontSize": "16px",
+                        "color": "#ffffff",
+                        "style": "With small icon (e.g., eye or play button), semi-transparent"
+                    }
+                ]
+            }
+        ],
+        "additionalInstructions": {
+            "responsiveness": "On mobile, collapse nav to hamburger menu; scale hero blob to fit screen.",
+            "animations": "Subtle fade-in for hero text; hover effects on nav and button.",
+            "assets": "Assume stock images for background; generate blob shape using CSS clip-path or SVG (e.g., clip-path: ellipse(50% 30% at 50% 50%) with irregularities).",
+            "codeGeneration": "Use HTML5 structure, CSS for styling (Flexbox for header, absolute positioning for hero overlays), minimal JS for interactions."
+        }
+    }
+}
